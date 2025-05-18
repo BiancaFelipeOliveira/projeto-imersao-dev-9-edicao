@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <title>Página 1</title>
+  </head>
+  <body>
+    <nav>
+      <a href="https://www.miraculousladybug.com/">
+        <img class="logo" src="../img/miraculous.png" alt="" />
+      </a>
+    </nav>
+    <main>
+      <div class="centre">
+        <h1><span><img src="../img/icon-gif.gif" alt=""></span>&nbsp;Créditos Miraculosos&nbsp;<span><img src="../img/icon-gif-2.gif" alt=""></span></h1>
+        <p>
+          Ladybug precisa viajar por diferentes países atrás dos antigos
+          guardiões dos Miraculous. Mas ela só pode usar uma moeda mágica
+          especial. Ajude-a a converter moedas corretamente para conseguir os
+          itens e dicas dos guardiões.
+        </p>
+        <input
+          id="input"
+          type="number"
+          name="number"
+          placeholder="Digite o valor aqui (em reais)"
+        />
+        <div id="buttons-play">
+          <button onclick="conversorDolar()">Dólar</button>
+          <button onclick="conversorLibra()">Libra</button>
+          <button onclick="conversorWon()">Won</button>
+          <button onclick="conversorEuro()">Euro</button>
+        </div>
+        <h3 id="resultado"></h3>
+      </div>
+    </main>
+    <div id="buttons">
+      <a class="button-nav" href="../paginainicial.html">
+        <img class="button-image" src="../img/favicon.png" alt="" />
+        <span>Menu</span>
+      </a>
+      <a class="button-nav" href="../aula-2/index.html">
+        <img class="button-image" src="../img/favicon.png" alt="" />
+        <span>Avançar</span>
+      </a>
+    </div>
+    <footer>
+      <h4>IMERSÃO DEV - ALURA 2025</h4>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

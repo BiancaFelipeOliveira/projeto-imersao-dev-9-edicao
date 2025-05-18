@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <title>Missão Miraculosa</title>
+  </head>
+  <body>
+    <nav>
+      <a href="https://www.miraculousladybug.com/">
+        <img class="logo" src="../img/miraculous.png" alt="" />
+      </a>
+    </nav>
+    <p class="intro">
+      Hawk Moth está reunindo energia para realizar um desejo com os miraculous.
+      Ladybug e CatNoir precisam da sua ajuda para vencer todos os desafios e
+      impedir o plano do vilão! <br />
+      Prepare-se para uma jornada cheia de coragem, inteligência e estratégia.
+      🐞✨
+    </p>
+
+    <button class="fase-btn" onclick="irParaFase('./aula-1/index.html')">
+      Fase 1: Créditos Miraculosos
+    </button>
+    <button class="fase-btn" onclick="irParaFase('./aula-2/index.html')">
+      Fase 2: Escolhas Táticas
+    </button>
+    <button class="fase-btn" onclick="irParaFase('./aula-3/index.html')">
+      Fase 3: Caminho da Coragem
+    </button>
+    <button class="fase-btn" onclick="irParaFase('./aula-4/index.html')">
+      Fase 4: Time Miraculoso
+    </button>
+    <button class="fase-btn" onclick="irParaFase('./aula-5/index.html')">
+      Fase 5: Sabedoria dos Miraculous
+    </button>
+
+    <footer>
+      <h4 class="footer">IMERSÃO DEV - ALURA 2025</h4>
+    </footer>
+
+    <script>
+      function irParaFase(pagina) {
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+          window.location.href = pagina;
+        }, 500); // mesmo tempo da transição
+      }
+    </script>
+  </body>
+</html>

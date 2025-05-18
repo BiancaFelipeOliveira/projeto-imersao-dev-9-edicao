@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --noir: rgb(0, 0, 0);
+  --blanc: rgb(255, 255, 255);
+  --ladybug: #b90202;
+  --antibug: #720000;
+  --padding-button: 8px 16px;
+  --padding-card: 16px;
+  --padding-input: 10px 15px;
+  --padding-title: 20px;
+  --padding-logo: 16px;
+  --padding-text: 20px;
+  --padding-footer: 15px;
+  --border: 2px solid rgb(0, 0, 0);
+  --border-radius-div: 10px;
+  --border-radius-input: 5px; 
+  --font: "Montserrat", sans-serif;
+}
+/* Animação de fade-out */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url('./img/fundo.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+ margin: 0
+}
+
+
+
+nav {
+    text-align: center;
+}
+
+.logo {
+    width: 20%;
+    padding: var(--padding-logo);
+}
+
+.intro {
+    max-width:700px;
+  margin: 1rem auto 2rem;
+  font-size: 20px;
+}
+
+.fase-btn {
+  display: block;
+  background: var(--ladybug);
+  color: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--border-radius-div);
+  font-size: 1.1rem;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.fase-btn:hover {
+  background: var(--antibug);
+  transform: scale(1.05);
+}
+
+
+h4 {
+font-size: 14px;
+color: var(--blanc);
+background-color: var(--noir);
+font-weight: 300;
+text-align: center;
+position:relative;
+bottom: 0;
+left: 0;
+margin: 0;
+
+
+padding: var(--padding-footer);
+}

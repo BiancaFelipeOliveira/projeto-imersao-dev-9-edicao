@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --noir: rgb(0, 0, 0);
+  --blanc: rgb(255, 255, 255);
+  --ladybug: #b90202;
+  --antibug: #720000;
+  --padding-button: 8px 16px;
+  --padding-card: 16px;
+  --padding-input: 10px 15px;
+  --padding-title: 20px;
+  --padding-logo: 16px;
+  --padding-text: 20px;
+  --padding-footer: 15px;
+  --border: 2px solid rgb(0, 0, 0);
+  --border-radius-div: 10px;
+  --border-radius-input: 5px;
+  --font: "Montserrat", sans-serif;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("../img/fundo.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: scroll;
+}
+
+nav {
+  text-align: center;
+}
+
+.logo {
+  width: 20%;
+  padding: var(--padding-logo);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centre {
+  background-color: var(--blanc);
+  border: var(--border);
+  width: 50%;
+  padding: 15px 40px;
+  border-radius: var(--border-radius-div);
+}
+
+h1 {
+  padding: var(--padding-title);
+  text-align: center;
+}
+
+p {
+  padding-bottom: var(--padding-text);
+  text-align: justify;
+}
+
+#batalhar {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-input);
+  border: var(--border);
+  background-color: var(--noir);
+  color: var(--blanc);
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#batalhar:hover {
+  background-color: var(--blanc);
+  color: var(--noir);
+  transition: background-color 0.5s ease;
+}
+
+h3 {
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.herois-container {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.personagens {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 1rem;
+  padding: 0 1rem;
+  width: max-content;
+}
+
+.cards {
+  border-radius: var(--border-radius-div);
+  cursor: pointer;
+  padding: var(--padding-card);
+  background-color: var(--blanc);
+}
+
+.cards > img {
+  width: 100px;
+  transition: transform 0.3s;
+  border-radius: var(--border-radius-input);
+}
+
+.cards:hover > img {
+  transform: scale(1.1);
+}
+
+.cards > span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 0.5rem;
+}
+
+#resultado {
+  font-size: 1.3rem;
+  padding: 1rem;
+  border: var(--border);
+  border-radius: var(--border-radius-div);
+  max-width: 600px;
+  margin-top: 10px;
+  display: none;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.caixa-vencedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.vencedor {
+  font-size: 20px;
+}
+
+.text-result {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.selecionado {
+  border: 3px solid #007bff;
+  border-radius: var(--border-radius-div);
+  background-color: #e0f0ff;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  margin-top: 10px;
+}
+
+.button-nav {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-image {
+  display: block;
+  transition: transform 0.5s ease;
+  width: 100px;
+}
+
+.button-nav span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: var(--blanc);
+  font-weight: bold;
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.button-nav:hover .button-image {
+  transform: scale(1.1) rotate(1deg);
+}
+
+h4 {
+  font-size: 14px;
+  color: var(--blanc);
+  background-color: var(--noir);
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--padding-footer);
+}

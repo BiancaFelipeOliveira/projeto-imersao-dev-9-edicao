@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <title>Página 4</title>
+  </head>
+  <body>
+    <nav>
+      <a href="https://www.miraculousladybug.com/">
+        <img class="logo" src="../img/miraculous.png" alt="" />
+      </a>
+    </nav>
+    <main>
+      <div class="centre">
+        <h1>
+          <span><img src="../img/icon-gif.gif" alt="" /></span>&nbsp;Time Miraculoso&nbsp;<span><img src="../img/icon-gif-2.gif" alt="" /></span>
+        </h1>
+        <p>
+          Ladybug precisa da sua ajuda para montar um time com
+          <strong>3</strong> heróis e enfrentar o vilão. Escolha com sabedoria —
+          quem tiver mais força vence a batalha!
+        </p>
+        <div class="herois-container">
+          <div class="personagens">
+            <button class="cards" onclick="selecionarHeroi('Bunnyx', this)">
+              <img src="../img/hero-bunnyx.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Bunnyx</span
+              >
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Carapace', this)">
+              <img src="../img/hero-carapace.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Carapace</span
+              >
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Pegasus', this)">
+              <img src="../img/hero-pegasus.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Pegasus</span
+              >
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Pigella', this)">
+              <img src="../img/hero-pigella.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Pigella</span
+              >
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Polymouse', this)">
+              <img src="../img/hero-polymouse.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Polymouse</span
+              >
+            </button>
+            <button
+              class="cards"
+              onclick="selecionarHeroi('Purple Tigress', this)"
+            >
+              <img src="../img/hero-purpletigress.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Purple
+                Tigress</span
+              >
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Queen Bee', this)">
+              <img src="../img/hero-queenbee.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Queen Bee</span
+              >
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Rena Rouge', this)">
+              <img src="../img/hero-renarouge.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Rena
+                Rouge</span
+              >
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Ryûko', this)">
+              <img src="../img/hero-ryuko.png" alt="" />
+              <span><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Ryûko</span>
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Vesperia', this)">
+              <img src="../img/hero-vesperia.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Vesperia</span
+              >
+            </button>
+            <button class="cards" onclick="selecionarHeroi('Viperion', this)">
+              <img src="../img/hero-viperion.png" alt="" />
+              <span
+                ><img src="../img/icon-gif-3.gif" alt="" />&nbsp;Viperion</span
+              >
+            </button>
+          </div>
+        </div>
+        <button id="batalhar" onclick="iniciarBatalha()">
+          Iniciar Batalha
+        </button>
+
+        <h3 id="resultado"></h3>
+      </div>
+    </main>
+    <div id="buttons">
+      <a class="button-nav" href="../aula-3/index.html">
+        <img class="button-image" src="../img/favicon.png" alt="" />
+        <span>Voltar</span>
+      </a>
+      <a class="button-nav" href="../aula-5/index.html">
+        <img class="button-image" src="../img/favicon.png" alt="" />
+        <span>Avançar</span>
+      </a>
+    </div>
+
+    <footer>
+      <h4>IMERSÃO DEV - ALURA 2025</h4>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
